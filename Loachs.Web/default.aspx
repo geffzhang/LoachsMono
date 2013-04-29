@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" validateRequest="false" Inherits="Loachs.Web._Default" Codebehind="default.aspx.cs" %>

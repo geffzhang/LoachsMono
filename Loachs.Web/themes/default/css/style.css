@@ -1,0 +1,60 @@
+﻿/*全局*/
+body{ font:14px/1.5  tahoma, arial, \5b8b\4f53, sans-serif;   margin:0 auto;}
+div{ margin:0px auto; }
+a { color:#0000ff; text-decoration:none;} 
+a:hover { text-decoration:underline;}
+
+/*wrapper 包含 header,container,footer ; container 包含 content,sidebar*/
+
+/*最外层容器*/
+#wrapper { width:96%; }
+
+/*主体容器*/
+#container { margin-top:10px; padding-right:350px;}
+
+/*主体*/
+#content { float:left;   width:100%; overflow:hidden;  }
+
+/*头部*/
+#header { border-bottom: 3px solid #000;}
+.site h2{  margin:30px 0 0px 0;   font-size:44px;  font-family: "Microsoft Yahei"; }
+.site a { color:#000 ; text-decoration:none;}
+.site p {    font-size:16px;     }
+.nav  {  margin:0; padding:5px 0px;  list-style-type:none;  }
+.nav li{ display:inline;   margin-right:20px;   }
+.nav li a { color:#000;  }
+
+/*文章*/
+.post { border-bottom:0px solid #ccc; margin-bottom:20px; }
+.post-message{ margin:0;}
+.post-title { margin:10px 0; padding:0; font-size:22px; font-family: "Microsoft Yahei";}
+.post-title a { color:#000;  }
+.post-meta span { padding-right:8px;}
+.post-content{  }
+.post-content img {	border: none;}
+.post-related  {  margin:0 15px; padding:0;  list-style-type:none; line-height:150%; }
+
+/*评论*/
+#commentlist{margin:0 15px; padding:0; }
+#commentlist li { border-bottom:1px dashed #ccc;  margin:  15px 0;    list-style-type:none; line-height:150%;}
+#commentlist li p{ word-wrap:break-word; overflow:auto; }
+.comment-floor { float:right; color:#ccc; font-size:20px;  }
+#commentform label{ display:block;}
+#commentmessage div { border: #ccc 1px solid; padding:3px; color:#666; }
+
+/*侧栏*/
+#sidebar { float:left;   width:350px; margin-right:-9999px; margin-left:20px; }
+#sidebar  h3 {  margin:10px 0;   }
+#sidebar ul { padding:0 0 0 5px ; margin:0;list-style-type:none;}
+#sidebar .widget { margin-bottom:25px;}
+#sidebar span { padding-left:3px; color:Gray;}
+#recenttags li{ display:inline; white-space:nowrap;}
+
+/*页脚*/
+#footer {  clear:both; text-align:center; font-size:12px; line-height:150%;} 
+.powered,.powered a{ color:#ccc; }
+
+/*分页*/
+.pager{   margin: 10px 0 10px 0; padding:5px 0; text-align:right;}
+.pager a,.pager span { line-height:20px;margin-right:5px;padding:3px 6px;   }
+.pager .current { background-color:#0000ff; color:#fff; font-weight:bold;}

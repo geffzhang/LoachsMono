@@ -1,0 +1,37 @@
+#parse("_header.html")
+<div id="content">
+    <div class="post">
+        <h1 class="post-title">${post.title}</h1>
+        <div class="post-meta">
+            <span class="post-author">${post.author.link}</span>
+            <span class="post-date">$post.createdate.tostring("yyyy-MM-dd")</span>
+            <span class="post-category">${post.category.link}</span>
+            <span class="post-view">浏览(${post.viewcount})</span>
+            <span class="post-comment"><a href="#comments">评论($post.commentcount)</a></span>
+        </div>
+        <div class="post-content">
+            ${post.content}           
+        </div>
+        <div class="post-tag">标签:
+            #foreach($item in $post.tags)
+            <a href="${item.url}" title="${item.description}">${item.name}</a>(${item.count})
+            #end
+        </div>
+        #* *#
+
+        <div>
+            上一篇: #if($post.previous.postid>0) ${post.previous.link} #else 没有了 #end
+            <br />
+            下一篇: #if($post.next.postid>0) ${post.next.link} #else 没有了 #end
+        </div>
+               <h3>相关文章</h3>
+        <ul class="post-related">
+            #foreach($item in $post.relatedposts)
+            <li><a href="${item.url}">${item.title}</a>(${item.viewcount})</li>
+            #end
+        </ul>
+        #parse("_comment.html")
+    </div>
+</div>
+#parse("_sidebar.html")
+#parse("_footer.html")

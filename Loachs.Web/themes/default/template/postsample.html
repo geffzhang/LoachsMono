@@ -1,0 +1,12 @@
+#parse("_header.html")
+<div id="content">
+    <div  class="post">
+        <h1 class="post-title">$post.title</h1>
+        <div class="post-content">
+            $post.content
+        </div>
+         #parse("_comment.html")
+    </div>
+</div>
+#parse("_sidebar.html")
+#parse("_footer.html")

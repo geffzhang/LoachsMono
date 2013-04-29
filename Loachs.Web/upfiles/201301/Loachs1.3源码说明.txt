@@ -1,0 +1,6 @@
+说明：
+
+1，请用vs2008打开
+2，web项目编译工具下载地址：http://www.microsoft.com/en-us/download/details.aspx?id=25163
+
+ 

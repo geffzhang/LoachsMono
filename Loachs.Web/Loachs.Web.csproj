@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BD68CA0E-8A63-4A44-95E1-AD5654F9D510}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Loachs.Web</RootNamespace>
+    <AssemblyName>Loachs.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\categorylist.aspx" />
+    <Content Include="admin\commentlist.aspx" />
+    <Content Include="admin\database.aspx" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\linklist.aspx" />
+    <Content Include="admin\login.aspx" />
+    <Content Include="admin\logout.aspx" />
+    <Content Include="admin\postedit.aspx" />
+    <Content Include="admin\postlist.aspx" />
+    <Content Include="admin\setting.aspx" />
+    <Content Include="admin\taglist.aspx" />
+    <Content Include="admin\themeedit.aspx" />
+    <Content Include="admin\themelist.aspx" />
+    <Content Include="admin\upfilebyeditor.aspx" />
+    <Content Include="admin\upfilelist.aspx" />
+    <Content Include="admin\UserControls\upfilemanager.ascx" />
+    <Content Include="admin\userlist.aspx" />
+    <Content Include="bin\Loachs.Core.dll" />
+    <Content Include="bin\Loachs.Core.pdb" />
+    <Content Include="bin\Loachs.Data.Access.dll" />
+    <Content Include="bin\Loachs.Data.Access.pdb" />
+    <Content Include="bin\NVelocity.dll" />
+    <Content Include="common\css\admin.css" />
+    <Content Include="common\css\thickbox.css" />
+    <Content Include="common\editor\adapters\jquery.js" />
+    <Content Include="common\editor\ckeditor.js" />
+    <Content Include="common\editor\ckeditor_basic.js" />
+    <Content Include="common\editor\config.js" />
+    <Content Include="common\editor\contents.css" />
+    <Content Include="common\editor\images\spacer.gif" />
+    <Content Include="common\editor\lang\en.js" />
+    <Content Include="common\editor\lang\zh-cn.js" />
+    <Content Include="common\editor\lang\zh.js" />
+    <Content Include="common\editor\lang\_languages.js" />
+    <Content Include="common\editor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="common\editor\plugins\a11yhelp\lang\en.js" />
+    <Content Include="common\editor\plugins\about\dialogs\about.js" />
+    <Content Include="common\editor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="common\editor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="common\editor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="common\editor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="common\editor\plugins\div\dialogs\div.js" />
+    <Content Include="common\editor\plugins\find\dialogs\find.js" />
+    <Content Include="common\editor\plugins\flash\dialogs\flash.js" />
+    <Content Include="common\editor\plugins\flash\images\placeholder.png" />
+    <Content Include="common\editor\plugins\forms\dialogs\button.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\form.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\radio.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\select.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="common\editor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="common\editor\plugins\iframedialog\plugin.js" />
+    <Content Include="common\editor\plugins\image\dialogs\image.js" />
+    <Content Include="common\editor\plugins\link\dialogs\anchor.js" />
+    <Content Include="common\editor\plugins\link\dialogs\link.js" />
+    <Content Include="common\editor\plugins\link\images\anchor.gif" />
+    <Content Include="common\editor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="common\editor\plugins\pastefromword\filter\default.js" />
+    <Content Include="common\editor\plugins\pastetext\dialogs\pastetext.js" />
+    <Content Include="common\editor\plugins\scayt\dialogs\options.js" />
+    <Content Include="common\editor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="common\editor\plugins\showblocks\images\block_address.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_div.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_p.png" />
+    <Content Include="common\editor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="common\editor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="common\editor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="common\editor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\envelope.gif" />
+    <Content Include="common\editor\plugins\smiley\images\heart.gif" />
+    <Content Include="common\editor\plugins\smiley\images\kiss.gif" />
+    <Content Include="common\editor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="common\editor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="common\editor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="common\editor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="common\editor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="common\editor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="common\editor\plugins\stylescombo\styles\default.js" />
+    <Content Include="common\editor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="common\editor\plugins\table\dialogs\table.js" />
+    <Content Include="common\editor\plugins\templates\dialogs\templates.js" />
+    <Content Include="common\editor\plugins\templates\templates\default.js" />
+    <Content Include="common\editor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="common\editor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="common\editor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="common\editor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="common\editor\plugins\uicolor\lang\en.js" />
+    <Content Include="common\editor\plugins\uicolor\plugin.js" />
+    <Content Include="common\editor\plugins\uicolor\uicolor.gif" />
+    <Content Include="common\editor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="common\editor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="common\editor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="common\editor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="common\editor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="common\editor\plugins\uicolor\yui\yui.js" />
+    <Content Include="common\editor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="common\editor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="common\editor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="common\editor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="common\editor\skins\kama\dialog.css" />
+    <Content Include="common\editor\skins\kama\editor.css" />
+    <Content Include="common\editor\skins\kama\icons.png" />
+    <Content Include="common\editor\skins\kama\images\dialog_sides.gif" />
+    <Content Include="common\editor\skins\kama\images\dialog_sides.png" />
+    <Content Include="common\editor\skins\kama\images\dialog_sides_rtl.png" />
+    <Content Include="common\editor\skins\kama\images\mini.gif" />
+    <Content Include="common\editor\skins\kama\images\noimage.png" />
+    <Content Include="common\editor\skins\kama\images\sprites.png" />
+    <Content Include="common\editor\skins\kama\images\sprites_ie6.png" />
+    <Content Include="common\editor\skins\kama\images\toolbar_start.gif" />
+    <Content Include="common\editor\skins\kama\skin.js" />
+    <Content Include="common\editor\skins\kama\templates.css" />
+    <Content Include="common\editor\themes\default\theme.js" />
+    <Content Include="common\images\admin\bg.png" />
+    <Content Include="common\images\admin\bglogo.gif" />
+    <Content Include="common\images\admin\loadingAnimation.gif" />
+    <Content Include="common\images\admin\no.gif" />
+    <Content Include="common\images\admin\notice.gif" />
+    <Content Include="common\images\admin\yes.gif" />
+    <Content Include="common\images\file\chm.gif" />
+    <Content Include="common\images\file\default.gif" />
+    <Content Include="common\images\file\doc.gif" />
+    <Content Include="common\images\file\folder.png" />
+    <Content Include="common\images\file\jpg.gif" />
+    <Content Include="common\images\file\pdf.gif" />
+    <Content Include="common\images\file\ppt.gif" />
+    <Content Include="common\images\file\psd.gif" />
+    <Content Include="common\images\file\rar.gif" />
+    <Content Include="common\images\file\swf.gif" />
+    <Content Include="common\images\file\txt.gif" />
+    <Content Include="common\images\file\wma.gif" />
+    <Content Include="common\images\file\xls.gif" />
+    <Content Include="common\images\logo.gif" />
+    <Content Include="common\images\watermark\watermark.gif" />
+    <Content Include="common\images\wlw\icon.png" />
+    <Content Include="common\images\wlw\sitepreview.png" />
+    <Content Include="common\images\wlw\watermark.png" />
+    <Content Include="common\scripts\common.js" />
+    <Content Include="common\scripts\jquery.js" />
+    <Content Include="common\scripts\jquery.tagto.js" />
+    <Content Include="common\scripts\thickbox.js" />
+    <Content Include="common\tools\verifyimage.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="themes\default\css\style.css" />
+    <Content Include="themes\default\template\default.html" />
+    <Content Include="themes\default\template\post.html" />
+    <Content Include="themes\default\template\postsample.html" />
+    <Content Include="themes\default\template\_comment.html" />
+    <Content Include="themes\default\template\_footer.html" />
+    <Content Include="themes\default\template\_header.html" />
+    <Content Include="themes\default\template\_sidebar.html" />
+    <Content Include="themes\default\theme.jpg" />
+    <Content Include="themes\default\theme.xml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin.master.cs">
+      <DependentUpon>admin.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.master.designer.cs">
+      <DependentUpon>admin.master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\categorylist.aspx.cs">
+      <DependentUpon>categorylist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\categorylist.aspx.designer.cs">
+      <DependentUpon>categorylist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\commentlist.aspx.cs">
+      <DependentUpon>commentlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\commentlist.aspx.designer.cs">
+      <DependentUpon>commentlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\database.aspx.cs">
+      <DependentUpon>database.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\database.aspx.designer.cs">
+      <DependentUpon>database.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\linklist.aspx.cs">
+      <DependentUpon>linklist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\linklist.aspx.designer.cs">
+      <DependentUpon>linklist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\postedit.aspx.cs">
+      <DependentUpon>postedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\postedit.aspx.designer.cs">
+      <DependentUpon>postedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\postlist.aspx.cs">
+      <DependentUpon>postlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\postlist.aspx.designer.cs">
+      <DependentUpon>postlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\setting.aspx.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\setting.aspx.designer.cs">
+      <DependentUpon>setting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\taglist.aspx.cs">
+      <DependentUpon>taglist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\taglist.aspx.designer.cs">
+      <DependentUpon>taglist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\themeedit.aspx.cs">
+      <DependentUpon>themeedit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\themeedit.aspx.designer.cs">
+      <DependentUpon>themeedit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\themelist.aspx.cs">
+      <DependentUpon>themelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\themelist.aspx.designer.cs">
+      <DependentUpon>themelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\upfilebyeditor.aspx.cs">
+      <DependentUpon>upfilebyeditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upfilebyeditor.aspx.designer.cs">
+      <DependentUpon>upfilebyeditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\upfilelist.aspx.cs">
+      <DependentUpon>upfilelist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\upfilelist.aspx.designer.cs">
+      <DependentUpon>upfilelist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\UserControls\upfilemanager.ascx.cs">
+      <DependentUpon>upfilemanager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\UserControls\upfilemanager.ascx.designer.cs">
+      <DependentUpon>upfilemanager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userlist.aspx.cs">
+      <DependentUpon>userlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userlist.aspx.designer.cs">
+      <DependentUpon>userlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="common\tools\verifyimage.aspx.cs">
+      <DependentUpon>verifyimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="common\tools\verifyimage.aspx.designer.cs">
+      <DependentUpon>verifyimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\backup\" />
+    <Folder Include="themes\default\images\" />
+    <Folder Include="upfiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\admin.master" />
+    <Content Include="common\config\feed.config" />
+    <Content Include="common\config\rewrite.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Loachs.Core\Loachs.Core.csproj">
+      <Project>{91A74915-3B8A-4CDA-B6AB-84B25AE1BCFF}</Project>
+      <Name>Loachs.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loachs.Data.Access\Loachs.Data.Access.csproj">
+      <Project>{0426F6E8-F31C-4D0B-BC11-B96D11D52D11}</Project>
+      <Name>Loachs.Data.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Loachs.UI\Loachs.UI.csproj">
+      <Project>{8BBBC9E1-6D73-45B1-8C65-F60B77B432B7}</Project>
+      <Name>Loachs.UI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Data\loachs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>10533</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

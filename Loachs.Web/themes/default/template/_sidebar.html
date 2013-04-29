@@ -1,0 +1,74 @@
+<div id="sidebar">
+    <div id="search" class="widget">
+        <h3>搜索</h3>
+        <form id="searchform" action="${siteurl}search.aspx" method="get" >
+            <input type="text" id="keyword" name="keyword" value="${searchkeyword}" /> <input type="submit" value="搜索"/>
+        </form>
+    </div>
+    <div id="authors" class="widget">
+        <h3>作者</h3>
+        <ul>
+        #foreach($item in $authors)
+            <li><a href="${item.url}"  title="${item.description}">${item.name}</a><span>(${item.postcount})</span></li>
+        #end
+        </ul>
+    </div>
+    <div id="categories" class="widget">
+        <h3>分类</h3>
+        <ul>
+        #foreach($item in $categories)
+            <li><a href="${item.url}" title="${item.description}">${item.name}</a><span>(${item.count})</span></li>
+        #end
+        </ul>
+    </div>
+    <div id="recentposts" class="widget">
+        <h3>最新日志</h3>
+        <ul>
+        #foreach($item in ${recentposts})
+            <li><a href="${item.url}" title="${item.title}">${item.title}</a></li>
+        #end
+        </ul>
+    </div>
+    <div id="recentcomments" class="widget">
+        <h3>最新评论</h3>
+        <ul>
+        #foreach($item in $recentcomments)
+            <li><a href="${item.url}" title="${item.name} 发表于 ${item.createdate}">${item.title}</a></li>
+        #end
+        </ul>
+    </div>
+    <div id="monthlist" class="widget">
+        <h3>归档</h3>
+        <ul>
+        #foreach($item in $archives)
+            <li><a href="${item.url}" title="">${item.date.tostring("yyyy年MM月")}</a><span>(${item.count})</span></li>
+        #end
+        </ul>
+    </div>
+    <div id="recenttags" class="widget">
+        <h3>标签</h3>
+        <ul>
+        #foreach($item in $recenttags)
+            <li><a href="${item.url}" title="${item.description}">${item.name}</a><span>(${item.count})</span></li>
+        #end
+        </ul>
+    </div>
+    <div id="generallinks" class="widget">
+        <h3>链接</h3>
+        <ul>
+        #foreach($item in $generallinks)
+            <li><a href="${item.url}" title="${item.description}" target="${item.target}">${item.name}</a></li>
+        #end
+        </ul>
+    </div>
+    <div  id="statistics" class="widget">
+        <h3>统计</h3>
+        <ul>
+            <li>文章:<span>${postcount} 篇</span></li>
+            <li>评论:<span>${commentcount} 条</span></li>
+            <li>作者:<span>${authorcount} 位</span></li>
+            <li>访问:<span>${viewcount} 次</span></li>
+            <li>订阅:<span><a href="${feedurl}">文章</a> <a href="${feedcommenturl}">评论</a> </span></li>
+        </ul>
+    </div>
+</div>

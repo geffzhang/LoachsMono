@@ -1,0 +1,37 @@
+#parse("_header.html")
+<div id="content">
+    ${postmessage}
+    #if($isdefault==1)
+        #foreach($item in $topposts)
+        <div class="post">
+            <h2 class="post-title">[置顶]<a href="${item.url}">${item.title}</a></h2>
+        </div>
+        #end
+    #end
+    #foreach($item in $posts)
+    <div id="post-${item.postid}" class="post">
+        <h2 class="post-title"><a href="${item.url}">${item.title}</a> </h2>
+        <div class="post-meta">
+            <span class="post-author">${item.author.link}</span>
+            <span class="post-date">$item.createdate.tostring("yyyy-MM-dd")</span>
+            <span class="post-category">${item.category.link}</span>
+            <span class="post-view"><a href="${item.url}">浏览(${item.viewcount})</a></span>
+            <span class="post-comment"><a href="${item.url}#comments">评论($item.commentcount)</a></span>
+        </div>
+        <div class="post-content">
+            ${item.detail}
+            <p>
+                <a href="${item.url}">详情...</a>
+            </p>
+        </div>
+    </div>
+    #end
+    #if($posts.count==0)
+    <div class="post">
+        <p>暂无对应文章</p>
+    </div>
+    #end
+    ${pager}
+</div>
+#parse("_sidebar.html")
+#parse("_footer.html")
