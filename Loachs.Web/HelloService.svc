@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Loachs.Web.HelloService" CodeBehind="HelloService.svc.cs" %>

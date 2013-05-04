@@ -12,8 +12,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Loachs.Web</RootNamespace>
     <AssemblyName>Loachs.Web</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,10 +36,18 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin\categorylist.aspx" />
@@ -205,6 +214,7 @@
     <Content Include="common\tools\verifyimage.aspx" />
     <Content Include="default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="HelloService.svc" />
     <Content Include="themes\default\css\style.css" />
     <Content Include="themes\default\template\default.html" />
     <Content Include="themes\default\template\post.html" />
@@ -366,6 +376,10 @@
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HelloService.svc.cs">
+      <DependentUpon>HelloService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IHelloService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
