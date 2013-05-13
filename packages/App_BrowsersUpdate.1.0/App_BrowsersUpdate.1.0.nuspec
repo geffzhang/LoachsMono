@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>App_BrowsersUpdate</id>
+    <version>1.0</version>
+    <title>ASP.NET Browser Capabilities Update with IE10 and FF5 fixes for .NET 4</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Two updated *.browser files for &gt;IE10 and &gt;FF5 on ASP.NET 4</description>
+    <summary>Two updated *.browser files for &gt;IE10 and &gt;FF5 on ASP.NET 4</summary>
+    <releaseNotes />
+    <copyright />
+    <language />
+    <tags>browser aspnet ie10 ff5 webforms</tags>
+  </metadata>
+</package>

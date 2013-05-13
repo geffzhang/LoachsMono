@@ -1,0 +1,33 @@
+﻿<browsers>
+    <!-- Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.0.11) Gecko/2009060215 Firefox/3.0.11 (.NET CLR 3.5.30729) -->
+    <browser id="Firefox3Plus" parentID="Firefox">
+        <identification>
+            <capability name="majorversion" match="[3-9]|\d{2,}" />
+        </identification>
+
+        <capabilities>
+            <capability name="javascriptversion"               value="1.8" />
+            <capability name="supportsMaintainScrollPositionOnPostback" value="true" />
+        </capabilities>
+    </browser>
+
+    <!-- Mozilla/5.0 (Windows; U; Windows NT 5.1; sv-SE; rv:1.9.1) Gecko/20090624 Firefox/3.5 -->
+    <browser id="Firefox3" parentID="Firefox3Plus">
+      <identification>
+        <capability name="majorversion" match="^3$" />
+      </identification>
+
+      <capabilities>
+      </capabilities>
+    </browser>
+
+  <!-- Mozilla/5.0 (Windows; U; Windows NT 5.1; sv-SE; rv:1.9.1) Gecko/20090624 Firefox/3.5 -->
+    <browser id="Firefox35" parentID="Firefox3">
+        <identification>
+            <capability name="minorversion" match="^[5-9]" />
+        </identification>
+
+        <capabilities>
+        </capabilities>
+    </browser>
+</browsers>

@@ -407,7 +407,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Browsers\ie.browser" />
+    <Content Include="App_Browsers\firefox.browser" />
     <None Include="App_Data\loachs.db" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
